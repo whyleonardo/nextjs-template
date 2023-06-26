@@ -1,40 +1,18 @@
-import Link from 'next/link'
-
-import { buttonVariants } from '@/components/ui/button'
-
-import { siteConfig } from '@/config/site'
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 export default function IndexPage() {
 	return (
-		<section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-			<div className="flex max-w-[980px] flex-col items-start gap-2">
-				<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-					Beautifully designed components <br className="hidden sm:inline" />
-					built with Radix UI and Tailwind CSS.
-				</h1>
-				<p className="text-muted-foreground max-w-[700px] text-lg">
-					Accessible and customizable components that you can copy and paste
-					into your apps. Free. Open Source. And Next.js 13 Ready.
-				</p>
-			</div>
-			<div className="flex gap-4">
-				<Link
-					href={siteConfig.links.docs}
-					target="_blank"
-					rel="noreferrer"
-					className={buttonVariants()}
-				>
-					Documentation
-				</Link>
-				<Link
-					target="_blank"
-					rel="noreferrer"
-					href={siteConfig.links.github}
-					className={buttonVariants({ variant: 'outline' })}
-				>
-					GitHub
-				</Link>
-			</div>
-		</section>
+		<div className="relative flex min-h-screen items-center justify-center">
+			<ThemeToggle />
+
+			<span className="flex flex-wrap items-center justify-center gap-1 px-4 text-5xl font-semibold tracking-tighter">
+				Next.js +
+				<span className="bg-gradient-to-br from-blue-700 to-blue-600 bg-clip-text text-transparent dark:from-blue-500 dark:to-blue-400">
+					Tailwind{' '}
+					<span className="text-neutral-950 dark:text-neutral-50">+&nbsp;</span>
+				</span>
+				shadcn-ui ❤️
+			</span>
+		</div>
 	)
 }
