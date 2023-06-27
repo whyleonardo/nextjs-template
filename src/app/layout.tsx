@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
+
 import { siteConfig } from '@/config/config'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/provider/ThemeProvider'
@@ -79,6 +81,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 							<div className="flex-1">{children}</div>
 						</div>
 					</ThemeProvider>
+					<ScreenSizeIndicator />
 				</body>
 			</html>
 		</>
