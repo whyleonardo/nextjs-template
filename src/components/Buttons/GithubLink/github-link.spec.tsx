@@ -35,6 +35,8 @@ describe('GithubLink', () => {
 
 		const newWindow = window.open(linkHref, '_blank')
 
+		fireEvent.click(screen.getByTestId(linkTestId))
+
 		expect(mockedOpen).toHaveBeenCalledWith(linkHref, '_blank')
 
 		expect(newWindow).not.toBeNull()
