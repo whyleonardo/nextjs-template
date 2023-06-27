@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 import { siteConfig } from '@/config/config'
 import { cn } from '@/lib/utils'
-import { ThemeProvider } from '@/providers/ThemeProvider'
+import { ThemeProvider } from '@/provider/ThemeProvider'
 import { fontSans } from '@/styles/fonts'
 
 import '@/styles/global.css'
