@@ -7,3 +7,14 @@
 		@apply w-6 h-6;
 	}
 }
+
+@layer base {
+	a, 
+	button {
+		@apply select-none;
+	} 
+}
+
+
+
+
