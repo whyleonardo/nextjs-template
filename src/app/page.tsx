@@ -4,7 +4,7 @@ import { ThemeToggle } from '@/components/Buttons/ThemeToggle'
 export default function IndexPage() {
 	return (
 		<div className="h-screen">
-			<header className="flex h-14 w-full items-center justify-end px-4">
+			<header className="container flex h-14 items-center justify-end">
 				<div className="flex items-center gap-2 ">
 					<SocialLinks.Github />
 					<SocialLinks.Linkedin />
