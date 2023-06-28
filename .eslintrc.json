@@ -5,9 +5,10 @@
     "next/core-web-vitals",
     "prettier",
     "plugin:tailwindcss/recommended",
-    "@whyleonardo/eslint-config"
+    "@whyleonardo/eslint-config",
+    "plugin:storybook/recommended"
   ],
-	"rules": {
-		"tailwindcss/no-custom-classname": "off"
-	}
+  "rules": {
+    "tailwindcss/no-custom-classname": "off"
+  }
 }
