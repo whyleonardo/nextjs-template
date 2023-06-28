@@ -5,7 +5,7 @@ import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
 import { siteConfig } from '@/config/config'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/provider/ThemeProvider'
-import { fontSans } from '@/styles/fonts'
+import { fontSans, fontMono } from '@/styles/fonts'
 
 import '@/styles/global.css'
 
@@ -72,8 +72,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				<head />
 				<body
 					className={cn(
-						'min-h-screen bg-neutral-50 dark:bg-neutral-950 font-sans antialiased',
-						fontSans.variable
+						'min-h-screen bg-background font-sans antialiased',
+						fontSans.variable,
+						fontMono.variable
 					)}
 				>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
