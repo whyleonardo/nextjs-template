@@ -29,7 +29,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.0",
     "react-wrap-balancer": "^1.0.0",
-    "sharp": "^0.31.3",
+    "sharp": "^0.32.0",
     "tailwind-merge": "^1.13.2",
     "tailwindcss-animate": "^1.0.6",
     "zod": "^3.21.4"
