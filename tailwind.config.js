@@ -59,7 +59,10 @@ module.exports = {
 			},
 			fontFamily: {
 				sans: ['var(--font-sans)'],
-				mono: ['var(--font-mono)']
+				mono: ['var(--font-mono)'],
+				heading: ['var(--font-sans-heading)'],
+
+
 			},
 			keyframes: {
 				'accordion-down': {
@@ -77,5 +80,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [require('tailwindcss-animated')]
+	plugins: [require('tailwindcss-animate')]
 }

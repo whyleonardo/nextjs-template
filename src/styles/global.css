@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+h1,h2,h3,h4,h5,h6 {
+	@apply font-heading;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -34,6 +38,8 @@
     --ring: 0 0% 63.9%;
 
     --radius: 0.5rem;
+
+		--font-sans-heading: 'Cal Sans', sans-serif;
   }
 
   .dark {
