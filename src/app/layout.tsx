@@ -79,6 +79,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<div className="relative flex min-h-screen flex-col">
+							<div className='inset-0 min-h-screen absolute -z-20'/>
+
 							<div className="flex-1">{children}</div>
 						</div>
 					</ThemeProvider>

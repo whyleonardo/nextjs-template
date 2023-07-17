@@ -1,6 +1,11 @@
-/** @type {import('tailwindcss').Config} */
+import { type Config } from "tailwindcss"
 
-module.exports = {
+const {
+	default: flattenColorPalette
+} = require("tailwindcss/lib/util/flattenColorPalette")
+const svgToDataUri = require("mini-svg-data-uri")
+
+export default {
 	darkMode: ['class'],
 	content: [
 		'./pages/**/*.{ts,tsx}',
@@ -21,6 +26,7 @@ module.exports = {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
+				svg: 'hsl(0 0% 63.9%)',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
@@ -66,12 +72,12 @@ module.exports = {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: { height: 0 },
+					from: { height: '0' },
 					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
 					from: { height: 'var(--radix-accordion-content-height)' },
-					to: { height: 0 }
+					to: { height: '0' }
 				}
 			},
 			animation: {
@@ -80,5 +86,21 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [require('tailwindcss-animate')]
-}
+	plugins: [
+		require('tailwindcss-animate'),
+		require('@beaubus/svg-patterns-for-tailwindcss'),
+		 function ({ matchUtilities, theme }: { matchUtilities: any; theme: any }) {
+      matchUtilities(
+        {
+          "bg-grid": (value: string) => ({
+            backgroundImage: `url("${svgToDataUri(
+							`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width='32' height='32' fill="none" stroke="${value}"><path d="M2,8 L5,2 L8,8"/></svg>`
+            )}")`,
+          }),
+        },
+				{ values: flattenColorPalette(theme("colors")), type: "color" },
+      );
+		},
+
+	]
+} satisfies Config

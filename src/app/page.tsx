@@ -17,6 +17,7 @@ export default function IndexPage() {
 					Next.js +
 					<span className="bg-gradient-to-br from-blue-700 to-blue-600 bg-clip-text text-transparent dark:from-blue-500 dark:to-blue-400">
 						Tailwind <span>+&nbsp;</span>
+
 					</span>
 					shadcn-ui ❤️
 				</span>
