@@ -66,8 +66,8 @@ dependencies:
     specifier: ^1.0.6
     version: 1.0.6(tailwindcss@3.3.2)
   vaul:
-    specifier: ^0.0.7
-    version: 0.0.7(@types/react-dom@18.2.6)(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.1.0
+    version: 0.1.0(@types/react-dom@18.2.6)(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0)
   zod:
     specifier: ^3.21.4
     version: 3.21.4
@@ -10905,6 +10905,7 @@ packages:
 
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -11612,6 +11613,7 @@ packages:
 
   /sax@1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -12746,8 +12748,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vaul@0.0.7(@types/react-dom@18.2.6)(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-OuVdSVSkJ6+8yj0wr+6QvM1BwQPtHJ3vksbb6OJRbgV8/0D6PdeEmTNdgICrRrvAuEKOHI+MKCS2SGahQPfOdg==}
+  /vaul@0.1.0(@types/react-dom@18.2.6)(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-x78j1x+AAvjgxSUNorDKisK0Lx/e9f8aIXCbelXO4zIe7klkmd+lB1jrUYaAnt5GkLuXBdUEw/9wDJNzNFtoTw==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
