@@ -21,7 +21,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "axios": "^1.4.0",
     "cal-sans": "^1.0.1",
-    "class-variance-authority": "^0.6.1",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
     "cmdk": "^0.2.0",
     "lucide-react": "0.260.0",
