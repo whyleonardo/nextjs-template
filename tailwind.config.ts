@@ -94,6 +94,9 @@ export default {
 			backgroundSize: {
 				gradient: '250%'
 			},
+			backgroundImage: {
+				'radial-gradient': 'radial-gradient(closest-side,transparent 0%, hsl(var(--background)) 120%);',
+			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
