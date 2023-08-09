@@ -1,12 +1,14 @@
 import { Metadata } from 'next'
-import { ThemeProvider } from '@/providers/ThemeProvider'
+
+import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
 
 import { siteConfig } from '@/config/config'
 import { cn } from '@/lib/utils'
-import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
+import { ThemeProvider } from '@/providers/ThemeProvider'
 import { fontMono, fontSans } from '@/styles/fonts'
 
 import '@/styles/global.css'
+import '@/styles/base.css'
 
 // TODO: CHECK INFOS IN DEV TO SEE IF IT'S WORKING
 export const metadata: Metadata = {
