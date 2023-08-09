@@ -1,11 +1,10 @@
 import { Metadata } from 'next'
-
-import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
+import { ThemeProvider } from '@/providers/ThemeProvider'
 
 import { siteConfig } from '@/config/config'
 import { cn } from '@/lib/utils'
-import { ThemeProvider } from '@/provider/ThemeProvider'
-import { fontSans, fontMono } from '@/styles/fonts'
+import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
+import { fontMono, fontSans } from '@/styles/fonts'
 
 import '@/styles/global.css'
 
@@ -13,7 +12,7 @@ import '@/styles/global.css'
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
-		template: `%s - ${siteConfig.name}`
+		template: `%s - ${siteConfig.name}`,
 	},
 	description: siteConfig.description,
 	keywords: [
@@ -21,13 +20,13 @@ export const metadata: Metadata = {
 		'React',
 		'Tailwind CSS',
 		'Server Components',
-		'Radix UI'
+		'Radix UI',
 	],
 	authors: siteConfig.authors,
 	creator: 'whyleonardo',
 	themeColor: [
 		{ media: '(prefers-color-scheme: light)', color: 'white' },
-		{ media: '(prefers-color-scheme: dark)', color: 'black' }
+		{ media: '(prefers-color-scheme: dark)', color: 'black' },
 	],
 	openGraph: {
 		type: 'website',
@@ -41,22 +40,22 @@ export const metadata: Metadata = {
 				url: siteConfig.ogImage,
 				width: 1200,
 				height: 630,
-				alt: siteConfig.name
-			}
-		]
+				alt: siteConfig.name,
+			},
+		],
 	},
 	twitter: {
 		card: 'summary_large_image',
 		title: siteConfig.name,
 		description: siteConfig.description,
 		images: [siteConfig.ogImage],
-		creator: '@christianlsb0'
+		creator: '@christianlsb0',
 	},
 	icons: {
 		icon: '/favicon.ico',
 		shortcut: '/favicon-16x16.png',
-		apple: '/apple-touch-icon.png'
-	}
+		apple: '/apple-touch-icon.png',
+	},
 	// manifest: `${siteConfig.url}/site.webmanifest`
 }
 
@@ -79,7 +78,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<div className="relative flex min-h-screen flex-col">
-							<div className='inset-0 min-h-screen absolute -z-20'/>
+							<div className="inset-0 min-h-screen absolute -z-20" />
 
 							<div className="flex-1">{children}</div>
 						</div>
