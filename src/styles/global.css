@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-h1,h2,h3,h4,h5,h6 {
-	@apply font-heading;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -38,8 +34,6 @@ h1,h2,h3,h4,h5,h6 {
     --ring: 0 0% 63.9%;
 
     --radius: 0.5rem;
-
-		--font-sans-heading: 'Cal Sans', sans-serif;
   }
 
   .dark {
@@ -72,25 +66,4 @@ h1,h2,h3,h4,h5,h6 {
 
     --ring: 0 0% 14.9%;
   }
-}
-
-@layer components {
-	.icon {
-		@apply w-6 h-6;
-	}
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
-
-	a,
-	button {
-		@apply select-none;
-	}
 }
