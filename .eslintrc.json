@@ -1,14 +1,18 @@
 {
-  "$schema": "https://json.schemastore.org/eslintrc",
-  "root": true,
-  "extends": [
-    "next/core-web-vitals",
-    "prettier",
-    "plugin:tailwindcss/recommended",
-    "@whyleonardo/eslint-config",
-    "plugin:storybook/recommended"
-  ],
-  "rules": {
-    "tailwindcss/no-custom-classname": "off"
-  }
+	"$schema": "https://json.schemastore.org/eslintrc",
+	"root": true,
+	"extends": [
+		"next/core-web-vitals",
+		"prettier",
+		"plugin:tailwindcss/recommended",
+		"plugin:storybook/recommended"
+	],
+	"rules": {
+		"@next/next/no-html-link-for-pages": "off",
+		"tailwindcss/no-custom-classname": "off",
+		"tailwindcss/classnames-order": "off",
+		"no-console": "warn",
+		"no-alert": "warn",
+		"no-unused-vars": "warn"
+	}
 }
