@@ -3,33 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
-		--font-sans-heading: 'Cal Sans', sans-serif;
+	* {
+		@apply border-border;
 	}
 
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
+	body {
+		@apply bg-background text-foreground;
+	}
 
 	a,
 	button {
 		@apply select-none;
 	}
-
-
-	h1,h2,h3,h4,h5,h6 {
-		@apply font-heading;
-	}
 }
-
 @layer components {
 	.icon {
 		@apply w-6 h-6;
 	}
 }
-
-

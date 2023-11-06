@@ -12,16 +12,13 @@ export default function IndexPage() {
 				</div>
 			</header>
 
-			<div className="flex h-[calc(100%-3.5rem)] items-center justify-center font-heading">
-				<span className="flex flex-wrap items-center justify-center -tracking-tight gap-1 px-4 text-4xl font-semibold sm:text-5xl xl:text-8xl">
-					Next.js +
-
-					<span className="bg-gradient-to-r animate-gradient bg-gradient from-blue-700 via-red-500 to-blue-600 bg-clip-text text-transparent">
-						Tailwind
-
-
+			<div className="flex h-[calc(100%-3.5rem)] font-black items-center justify-center">
+				<span className="flex flex-wrap items-center justify-center tracking-tight gap-1 px-4 text-3xl sm:text-5xl xl:text-8xl">
+					Next.
+					<span className="bg-gradient-to-r animate-gradient tracking-tighter bg-gradient from-blue-700 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+						Tailwind.
 					</span>
-					+ shadcn-ui ❤️
+					shadcn-ui.
 				</span>
 			</div>
 		</div>
