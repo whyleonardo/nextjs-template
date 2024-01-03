@@ -1,0 +1,13 @@
+{
+	"emeraldwalk.runonsave": {
+		"commands": [
+			{
+				// If you have your CSS file somewhere else, you have to specify the
+				// correct path here.
+				// "match": "./src/styles/global-edit.css",
+				"match": "\\.css$",
+				"cmd": "pnpm tw:fix"
+			}
+		]
+	}
+}
