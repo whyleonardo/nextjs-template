@@ -85,6 +85,9 @@ devDependencies:
   '@storybook/addon-styling':
     specifier: ^1.3.7
     version: 1.3.7(@types/react-dom@18.2.18)(@types/react@18.2.46)(less@4.2.0)(postcss@8.4.32)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(webpack@5.89.0)
+  '@storybook/addon-themes':
+    specifier: 7.6.7
+    version: 7.6.7
   '@storybook/blocks':
     specifier: 7.6.7
     version: 7.6.7(@types/react-dom@18.2.18)(@types/react@18.2.46)(react-dom@18.2.0)(react@18.2.0)
@@ -3546,6 +3549,12 @@ packages:
       - sass-embedded
       - supports-color
       - typescript
+    dev: true
+
+  /@storybook/addon-themes@7.6.7:
+    resolution: {integrity: sha512-JoXYZxyPWNONbKVzBCFDUEW6bc4GFvyG9i8uJniTCf84pgj8H7Z6qDei8yJgAmQp1AeDdNsx2sYiFwQ45+OXlg==}
+    dependencies:
+      ts-dedent: 2.2.0
     dev: true
 
   /@storybook/addon-toolbars@7.6.7:
