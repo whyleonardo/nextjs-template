@@ -11,10 +11,9 @@
 	"rules": {
 		"@next/next/no-html-link-for-pages": "off",
 		"tailwindcss/no-custom-classname": "off",
-		"tailwindcss/classnames-order": "off",
 		"no-console": "warn",
 		"no-alert": "warn",
-		// "no-unused-vars": "warn",
+		"no-unused-vars": "warn",
 		"import-helpers/order-imports": [
 			"warn",
 			{
