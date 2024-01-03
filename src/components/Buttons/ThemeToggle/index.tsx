@@ -3,7 +3,7 @@
 import { useTheme } from 'next-themes'
 import * as React from 'react'
 
-import { Icons } from '@/components/Icons'
+import { Icons } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 
 export const ThemeToggle = () => {
@@ -11,7 +11,7 @@ export const ThemeToggle = () => {
 
 	return (
 		<Button
-			variant="ghost"
+			variant="icon"
 			size="icon"
 			onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
 		>

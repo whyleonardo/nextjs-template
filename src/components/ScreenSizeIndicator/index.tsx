@@ -1,4 +1,4 @@
-import { Icons } from '@/components/Icons'
+import { Icons } from '@/components/icons'
 
 export const ScreenSizeIndicator = () => {
 	if (process.env.NODE_ENV === 'production') return null

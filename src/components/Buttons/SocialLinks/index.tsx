@@ -8,7 +8,7 @@ const Github = () => {
 	return (
 		<Link
 			className={buttonVariants({
-				variant: 'ghost',
+				variant: 'icon',
 				size: 'icon',
 			})}
 			href="https://github.com/whyleonardo"
@@ -25,7 +25,7 @@ const Linkedin = () => {
 	return (
 		<Link
 			className={buttonVariants({
-				variant: 'ghost',
+				variant: 'icon',
 				size: 'icon',
 			})}
 			href="https://linkedin.com/in/christianlsb"
