@@ -9,7 +9,7 @@ const Github = () => {
 		<Link
 			className={buttonVariants({
 				variant: 'ghost',
-				size: 'icon'
+				size: 'icon',
 			})}
 			href="https://github.com/whyleonardo"
 			data-testid="github-link"
@@ -26,7 +26,7 @@ const Linkedin = () => {
 		<Link
 			className={buttonVariants({
 				variant: 'ghost',
-				size: 'icon'
+				size: 'icon',
 			})}
 			href="https://linkedin.com/in/christianlsb"
 			data-testid="github-link"

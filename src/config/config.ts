@@ -3,8 +3,8 @@ export const siteConfig = {
 	authors: [
 		{
 			name: 'whyleonardo',
-			url: 'https://github.com/whyleonardo'
-		}
+			url: 'https://github.com/whyleonardo',
+		},
 	],
 	url: 'https://github.com/whyleonardo/next-shadcn-template',
 	ogImage: '',
@@ -13,8 +13,8 @@ export const siteConfig = {
 	links: {
 		github: 'https://github.com/whyleonardo/next-shadcn-template',
 		twitter: '',
-		linkedin: ''
-	}
+		linkedin: '',
+	},
 }
 
 export type SiteConfig = typeof siteConfig

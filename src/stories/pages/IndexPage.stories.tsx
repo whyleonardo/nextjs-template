@@ -1,6 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react'
-
 import HomePage from '@/app/page'
+import type { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta<typeof HomePage> = {
 	title: 'Pages/Index',

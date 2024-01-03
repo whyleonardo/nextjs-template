@@ -12,10 +12,10 @@ export default function IndexPage() {
 				</div>
 			</header>
 
-			<div className="flex h-[calc(100%-3.5rem)] font-black items-center justify-center">
-				<span className="flex flex-wrap items-center justify-center tracking-tight gap-1 px-4 text-3xl sm:text-5xl xl:text-8xl">
+			<div className="flex h-[calc(100%-3.5rem)] items-center justify-center font-black">
+				<span className="flex flex-wrap items-center justify-center gap-1 px-4 text-3xl tracking-tight sm:text-5xl xl:text-8xl">
 					Next.
-					<span className="bg-gradient-to-r animate-gradient tracking-tighter bg-gradient from-blue-700 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+					<span className="animate-gradient bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 bg-gradient bg-clip-text tracking-tighter text-transparent">
 						Tailwind.
 					</span>
 					shadcn-ui.
