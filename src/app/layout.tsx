@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { Metadata, type Viewport } from 'next'
 
 import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
 
@@ -10,26 +10,22 @@ import { fontMono, fontSans } from '@/styles/fonts'
 import '@/styles/global.css'
 import '@/styles/base.css'
 
-// TODO: CHECK INFOS IN DEV TO SEE IF IT'S WORKING
+export const viewport: Viewport = {
+	themeColor: [
+		{ media: '(prefers-color-scheme: light)', color: 'white' },
+		{ media: '(prefers-color-scheme: dark)', color: 'black' },
+	],
+}
+
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
 		template: `%s - ${siteConfig.name}`,
 	},
 	description: siteConfig.description,
-	keywords: [
-		'Next.js',
-		'React',
-		'Tailwind CSS',
-		'Server Components',
-		'Radix UI',
-	],
+	keywords: ['Next.js', 'React', 'Tailwind CSS', 'Radix UI', 'shadcn/ui'],
 	authors: siteConfig.authors,
 	creator: 'whyleonardo',
-	themeColor: [
-		{ media: '(prefers-color-scheme: light)', color: 'white' },
-		{ media: '(prefers-color-scheme: dark)', color: 'black' },
-	],
 	openGraph: {
 		type: 'website',
 		locale: 'pt_BR',
@@ -58,7 +54,6 @@ export const metadata: Metadata = {
 		shortcut: '/favicon-16x16.png',
 		apple: '/apple-touch-icon.png',
 	},
-	// manifest: `${siteConfig.url}/site.webmanifest`
 }
 
 interface RootLayoutProps {
@@ -75,12 +70,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
 					className={cn(
 						'min-h-screen bg-background font-sans antialiased',
 						fontSans,
-						fontMono
+						fontMono,
 					)}
 				>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 						<div className="relative flex min-h-screen flex-col">
-							<div className="inset-0 min-h-screen absolute -z-20" />
+							<div className="absolute inset-0 -z-20 min-h-screen" />
 
 							<div className="flex-1">{children}</div>
 						</div>
