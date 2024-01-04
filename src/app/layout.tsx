@@ -26,6 +26,7 @@ export const metadata: Metadata = {
 	keywords: ['Next.js', 'React', 'Tailwind CSS', 'Radix UI', 'shadcn/ui'],
 	authors: siteConfig.authors,
 	creator: 'whyleonardo',
+	metadataBase: new URL(siteConfig.url),
 	openGraph: {
 		type: 'website',
 		locale: 'pt_BR',
@@ -64,7 +65,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<>
 			<html lang="en" suppressHydrationWarning>
-				{/* eslint-disable-next-line @next/next/no-head-element*/}
 				<head />
 				<body
 					className={cn(

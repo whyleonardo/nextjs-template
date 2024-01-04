@@ -1,3 +1,5 @@
+import { env } from '@/lib/env.mjs'
+
 export const siteConfig = {
 	name: 'Next Boilerplate',
 	authors: [
@@ -6,7 +8,7 @@ export const siteConfig = {
 			url: 'https://github.com/whyleonardo',
 		},
 	],
-	url: 'https://github.com/whyleonardo/next-shadcn-template',
+	url: env.NEXT_PUBLIC_SITE_BASE_URL,
 	ogImage: '',
 	description:
 		'✨ NextJS template for building apps with TailwindCSS and RadixUI ✨',
