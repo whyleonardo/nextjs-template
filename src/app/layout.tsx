@@ -5,7 +5,7 @@ import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
 import { siteConfig } from '@/config/config'
 import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/providers/ThemeProvider'
-import { fontMono, fontSans } from '@/styles/fonts'
+import { fontCalSans, fontMono, fontSans } from '@/styles/fonts'
 
 import '@/styles/global.css'
 import '@/styles/base.css'
@@ -71,6 +71,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 						'min-h-screen bg-background font-sans antialiased',
 						fontSans,
 						fontMono,
+						fontCalSans,
 					)}
 				>
 					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
