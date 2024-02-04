@@ -5,12 +5,6 @@ const {
 } = require('tailwindcss/lib/util/flattenColorPalette')
 const svgToDataUri = require('mini-svg-data-uri')
 
-const { createPlugin } = require('windy-radix-palette')
-
-const colors = createPlugin({
-	opacitySupport: true,
-})
-
 export default {
 	darkMode: ['class'],
 	content: [
@@ -73,6 +67,7 @@ export default {
 				sans: ['var(--font-geist-sans)'],
 				mono: ['var(--font-geist-mono)'],
 				calSans: ['var(--font-cal-sans)'],
+				poppins: ['var(--font-poppins)'],
 			},
 			keyframes: {
 				'accordion-down': {
@@ -100,7 +95,7 @@ export default {
 			},
 			backgroundImage: {
 				'radial-gradient':
-					'radial-gradient(closest-side,transparent 0%, hsl(var(--background)) 120%);',
+					'radial-gradient(ellipse at center, var(--tw-gradient-stops))',
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -110,7 +105,6 @@ export default {
 		},
 	},
 	plugins: [
-		colors.plugin,
 		require('tailwindcss-animate'),
 		function ({ matchUtilities, theme }: { matchUtilities: any; theme: any }) {
 			matchUtilities(
