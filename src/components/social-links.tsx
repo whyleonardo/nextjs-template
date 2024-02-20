@@ -1,15 +1,15 @@
-import Link from 'next/link'
+import Link from "next/link"
 
-import { buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from "@/components/ui/button"
 
-import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons"
 
 const Github = () => {
 	return (
 		<Link
 			className={buttonVariants({
-				variant: 'icon',
-				size: 'icon',
+				variant: "icon",
+				size: "icon"
 			})}
 			href="https://github.com/whyleonardo"
 			data-testid="github-link"
@@ -25,8 +25,8 @@ const Linkedin = () => {
 	return (
 		<Link
 			className={buttonVariants({
-				variant: 'icon',
-				size: 'icon',
+				variant: "icon",
+				size: "icon"
 			})}
 			href="https://linkedin.com/in/christianlsb"
 			data-testid="github-link"

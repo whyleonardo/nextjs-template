@@ -3,31 +3,9 @@
 	"root": true,
 	"extends": [
 		"next/core-web-vitals",
+		"@whyleonardo/eslint-config/react",
 		"prettier",
 		"plugin:tailwindcss/recommended"
 	],
-	"plugins": ["eslint-plugin-import-helpers"],
-	"rules": {
-		"tailwindcss/no-custom-classname": "off",
-		"no-console": "warn",
-		"no-alert": "warn",
-		"no-unused-vars": "warn",
-		"import-helpers/order-imports": [
-			"warn",
-			{
-				"newlinesBetween": "always",
-				"groups": [
-					["/^react/", "/^next/", "/^@next/"],
-					"/components/",
-					"/module/",
-					"/^@shared/",
-					"/absolute/",
-					["parent", "sibling", "index"]
-				],
-				"alphabetize": { "order": "asc", "ignoreCase": true }
-			}
-		],
-		"quotes": ["error", "single"],
-		"semi": ["error", "never"]
-	}
+	"plugins": ["eslint-plugin-import-helpers"]
 }

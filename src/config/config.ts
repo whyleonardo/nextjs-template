@@ -1,22 +1,22 @@
-import { env } from '@/lib/env.mjs'
+import { env } from "@/lib/env.mjs"
 
 export const siteConfig = {
-	name: 'Next Boilerplate',
+	name: "Next Boilerplate",
 	authors: [
 		{
-			name: 'whyleonardo',
-			url: 'https://github.com/whyleonardo',
-		},
+			name: "whyleonardo",
+			url: "https://github.com/whyleonardo"
+		}
 	],
 	url: env.NEXT_PUBLIC_SITE_BASE_URL,
-	ogImage: '',
+	ogImage: "",
 	description:
-		'✨ NextJS template for building apps with TailwindCSS and RadixUI ✨',
+		"✨ NextJS template for building apps with TailwindCSS and RadixUI ✨",
 	links: {
-		github: 'https://github.com/whyleonardo/next-shadcn-template',
-		twitter: '',
-		linkedin: '',
-	},
+		github: "https://github.com/whyleonardo/next-shadcn-template",
+		twitter: "",
+		linkedin: ""
+	}
 }
 
 export type SiteConfig = typeof siteConfig

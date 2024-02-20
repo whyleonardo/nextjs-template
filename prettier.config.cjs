@@ -5,7 +5,8 @@ module.exports = {
 	endOfLine: 'auto',
 	traillingComma: 'none',
 	arrowParens: 'always',
-	singleQuote: true,
+	singleQuote: false,
 	semi: false,
 	tabWidth: 2,
+
 }

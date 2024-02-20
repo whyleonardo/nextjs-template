@@ -1,5 +1,5 @@
-import { SocialLinks } from '@/components/buttons/SocialLinks'
-import { ThemeToggle } from '@/components/buttons/ThemeToggle'
+import { SocialLinks } from "@/components/social-links"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function IndexPage() {
 	return (
