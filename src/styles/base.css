@@ -8,14 +8,16 @@
 	}
 
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-foreground font-sans tracking-tighter;
 	}
 
 	a,
-	button {
+	button,
+	img {
 		@apply select-none;
 	}
 }
+
 @layer components {
 	.icon {
 		@apply w-6 h-6;

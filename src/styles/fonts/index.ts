@@ -1,6 +1,7 @@
 import localFont from "next/font/local"
 
-import { GeistMono, GeistSans } from "geist/font"
+import { GeistMono } from "geist/font/mono"
+import { GeistSans } from "geist/font/sans"
 
 const localCalSans = localFont({
 	src: "./cal-sans/CalSans-SemiBold.woff2",

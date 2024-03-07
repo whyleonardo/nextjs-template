@@ -63,22 +63,18 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
-		<html lang="pt-BR">
+		<html lang="">
 			<head />
 			<body
 				className={cn(
-					"min-h-screen bg-background font-sans antialiased",
+					"min-h-screen bg-background antialiased",
 					fontSans,
 					fontMono,
 					fontCalSans
 				)}
 			>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-					<div className="relative flex min-h-screen flex-col">
-						<div className="absolute inset-0 -z-20 min-h-screen" />
-
-						<div className="flex-1">{children}</div>
-					</div>
+					{children}
 				</ThemeProvider>
 				<ScreenSizeIndicator />
 			</body>
