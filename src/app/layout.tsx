@@ -3,12 +3,14 @@ import { Metadata, type Viewport } from "next"
 import { ScreenSizeIndicator } from "@/components/screen-size-indicator"
 
 import { siteConfig } from "@/config/config"
-import { cn } from "@/lib/utils"
-import { ThemeProvider } from "@/providers/theme-provider"
-import { fontCalSans, fontMono, fontSans } from "@/styles/fonts"
 
-import "@/styles/global.css"
+import { cn } from "@/lib/utils"
+
 import "@/styles/base.css"
+import { fontCalSans, fontMono, fontSans } from "@/styles/fonts"
+import "@/styles/global.css"
+
+import { ThemeProvider } from "@/providers/theme-provider"
 
 export const viewport: Viewport = {
 	themeColor: [

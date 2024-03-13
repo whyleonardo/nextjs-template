@@ -9,7 +9,5 @@
 	"rules": {
 		"react/self-closing-comp": "off"
 	},
-	"plugins": [
-		"eslint-plugin-import-helpers"
-	]
+	"plugins": ["eslint-plugin-import-helpers"]
 }
