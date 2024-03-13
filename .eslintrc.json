@@ -4,11 +4,12 @@
 	"extends": [
 		"next/core-web-vitals",
 		"@whyleonardo/eslint-config/react",
-		"prettier",
 		"plugin:tailwindcss/recommended"
 	],
 	"rules": {
 		"react/self-closing-comp": "off"
 	},
-	"plugins": ["eslint-plugin-import-helpers"]
+	"plugins": [
+		"eslint-plugin-import-helpers"
+	]
 }
