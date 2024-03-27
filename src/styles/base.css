@@ -8,7 +8,7 @@
 	}
 
 	body {
-		@apply bg-background text-foreground font-sans tracking-tighter;
+		@apply bg-background font-sans tracking-tighter text-foreground;
 	}
 
 	a,
@@ -20,6 +20,6 @@
 
 @layer components {
 	.icon {
-		@apply w-6 h-6;
+		@apply h-6 w-6;
 	}
 }
