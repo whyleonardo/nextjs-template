@@ -1,0 +1,13 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit"
+	},
+	"emeraldwalk.runonsave": {
+		"commands": [
+			{
+				"match": "\\.(ts|tsx|js|jsx|html)$",
+				"cmd": "bunx biome lint ${file} --apply-unsafe"
+			}
+		]
+	}
+}
