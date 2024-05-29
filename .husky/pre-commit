@@ -1,1 +1,1 @@
-bun lint && bun format && bunx biome ci ./src/** --organize-imports-enabled=false $1
+bun lint-staged
