@@ -50,10 +50,10 @@
 		"@types/react-dom": "npm:types-react-dom@rc"
 	},
 	"lint-staged": {
-		"**/*.{ts,tsx,js,jsx,cjs,mjs}": [
-			"biome lint --apply ./src/**",
-			"biome format --write ./src/**"
+		"**/*.{ts,tsx,js,jsx,cjs,mjs,json}": [
+			"biome lint --apply .",
+			"biome format --write ."
 		],
-		"*": ["biome format --write ./src/**"]
+		"*": ["biome format --write ."]
 	}
 }
