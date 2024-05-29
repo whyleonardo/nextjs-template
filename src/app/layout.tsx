@@ -1,16 +1,13 @@
-import { Metadata, type Viewport } from "next"
-
 import { ScreenSizeIndicator } from "@/components/screen-size-indicator"
-
 import { siteConfig } from "@/config/config"
-
 import { cn } from "@/lib/utils"
+import { ThemeProvider } from "@/providers/theme-provider"
+import { fontCalSans, fontMono, fontSans } from "@/styles/fonts"
+import { Metadata, Viewport } from "next"
+import { ReactNode } from "react"
 
 import "@/styles/base.css"
-import { fontCalSans, fontMono, fontSans } from "@/styles/fonts"
 import "@/styles/global.css"
-
-import { ThemeProvider } from "@/providers/theme-provider"
 
 export const viewport: Viewport = {
 	themeColor: [
@@ -60,7 +57,7 @@ export const metadata: Metadata = {
 }
 
 interface RootLayoutProps {
-	children: React.ReactNode
+	children: ReactNode
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
