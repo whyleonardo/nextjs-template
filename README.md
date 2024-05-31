@@ -30,16 +30,21 @@ Before using this boilerplate, make sure you have Node.js installed on your mach
 
 1. Clone this repository with:
 
-`npx degit whyleonardo/nextjs-template <my-app>`
+`bunx degit whyleonardo/nextjs-template <my-app>`
 
 2. Navigate to the project folder and run:
 
-`npm install` or `yarn install` or `pnpm install`
+`npm install` or `yarn install` or `pnpm install` or `bun install`
 
-3. Run:
+3. To install dependecies run:
 
-`npm install` or `yarn install` or `pnpm install`
+`npm install` or `yarn install` or `pnpm install` or `bun
+install`
 
-4. Access http://localhost:3000.
+4. And copy env variables to `.env` file:
+
+`bun copy-env`
+
+5. Access `http://localhost:3000`.
 
 And, enjoy!
