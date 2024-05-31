@@ -1,4 +1,4 @@
-import fluid, { extract } from "fluid-tailwind"
+import fluid, { extract, fontSize, screens } from "fluid-tailwind"
 import type { Config } from "tailwindcss"
 
 const svgToDataUri = require("mini-svg-data-uri")
@@ -18,6 +18,8 @@ const config = {
       }
     },
     extend: {
+      fontSize,
+      screens,
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
