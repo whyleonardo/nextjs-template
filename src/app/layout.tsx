@@ -66,7 +66,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="">
+    <html>
       <head />
       <body
         className={cn(
