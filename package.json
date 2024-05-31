@@ -9,7 +9,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
     "format:write": "prettier \"**/*\" --ignore-unknown --list-different --write",
-    "lint": "bunx biome lint --apply ./src/**",
+    "lint": "biome lint --apply ./src/**",
     "prepare": "husky",
     "preview": "next build && next start",
     "start": "next start",
