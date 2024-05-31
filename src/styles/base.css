@@ -3,34 +3,35 @@
 @tailwind utilities;
 
 @layer base {
-	* {
-		@apply border-border;
-	}
+  * {
+    @apply border-border;
+  }
 
-	body {
-		@apply bg-background font-sans tracking-tighter text-foreground;
-	}
+  body {
+    @apply bg-background font-sans tracking-tighter text-foreground;
+  }
 
-	a,
-	button,
-	img {
-		@apply select-none;
-	}
+  a,
+  button,
+  img {
+    @apply select-none;
+  }
 }
 
 @layer components {
-	.icon {
-		@apply h-6 w-6;
-	}
+  .icon {
+    @apply h-6 w-6;
+  }
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: hsl(var(--accent-foreground));
   background: hsl(var(--accent));
 }
 
 ::selection {
-	color: hsl(var(--accent));
+  color: hsl(var(--accent));
   background: hsl(var(--accent-foreground));
-	border-radius: 1rem;
+  border-radius: 1rem;
 }
