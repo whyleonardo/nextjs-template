@@ -11,7 +11,10 @@ coverage
 # next.js
 .next/
 out/
-build
+
+
+# vitest
+test-results
 
 # misc
 .DS_Store

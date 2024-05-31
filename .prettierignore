@@ -3,4 +3,5 @@ bun.lockb
 .gitignore
 .husky
 .next
-html
+test-results
+test-coverage-results

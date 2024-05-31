@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "clean": "rimraf .next .swc out coverage",
-    "coverage": "vitest run --coverage",
+    "clean": "rimraf --glob node_modules dist .next bun.lockb .tsbuildinfo test-results test-coverage-results",
+    "copy-env": "cp .env.example .env",
     "dev": "next dev --turbo",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
@@ -13,7 +13,10 @@
     "prepare": "husky",
     "preview": "next build && next start",
     "start": "next start",
-    "test": "vitest --ui",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest",
     "ui:add": "bun x shadcn-ui@latest add"
   },
   "lint-staged": {
@@ -34,7 +37,7 @@
     "geist": "^1.3.0",
     "lucide-react": "0.350.0",
     "next": "^15.0.0-rc.0",
-    "next-themes": "^0.2.1",
+    "next-themes": "^0.3.0",
     "react": "^19.0.0-rc-935180c7e0-20240524",
     "react-dom": "^19.0.0-rc-935180c7e0-20240524",
     "sharp": "^0.33.3",
@@ -65,6 +68,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-packagejson": "^2.5.0",
     "prettier-plugin-tailwindcss": "^0.6.0",
+    "rimraf": "^5.0.7",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.4",
     "vitest": "^1.6.0"
@@ -72,5 +76,8 @@
   "overrides": {
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc"
-  }
+  },
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
 }
