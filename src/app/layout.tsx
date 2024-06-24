@@ -7,7 +7,6 @@ import { siteConfig } from "@/config/config"
 
 import { cn } from "@/lib/utils"
 
-import "@/styles/base.css"
 import { fontCalSans, fontMono, fontSans } from "@/styles/fonts"
 import "@/styles/global.css"
 
@@ -66,16 +65,9 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html>
+    <html suppressHydrationWarning>
       <head />
-      <body
-        className={cn(
-          "min-h-screen bg-background antialiased",
-          fontSans,
-          fontMono,
-          fontCalSans
-        )}
-      >
+      <body className={cn("min-h-screen", fontSans, fontMono, fontCalSans)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>

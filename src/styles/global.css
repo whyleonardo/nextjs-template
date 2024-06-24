@@ -3,6 +3,47 @@
 @tailwind utilities;
 
 @layer base {
+  *,
+  ::before,
+  ::after {
+    @apply border-border;
+  }
+
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-background font-sans tracking-tighter text-foreground;
+  }
+
+  a,
+  button,
+  img,
+  svg {
+    @apply select-none;
+  }
+}
+
+@layer components {
+  .icon {
+    @apply h-6 w-6;
+  }
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: hsl(var(--accent-foreground));
+  background: hsl(var(--accent));
+}
+
+::selection {
+  color: hsl(var(--accent));
+  background: hsl(var(--accent-foreground));
+  border-radius: 1rem;
+}
+
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 12.55%;
