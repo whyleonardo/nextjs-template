@@ -1,5 +1,5 @@
-import { Metadata, Viewport } from "next"
-import { ReactNode } from "react"
+import type { Metadata, Viewport } from "next"
+import type { ReactNode } from "react"
 
 import { ScreenSizeIndicator } from "@/components/screen-size-indicator"
 
@@ -32,7 +32,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head />
       <body className={cn("min-h-screen", fontSans, fontMono, fontCalSans)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

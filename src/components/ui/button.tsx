@@ -4,8 +4,7 @@ import { cn } from "@/lib/utils"
 
 import { Slot, Slottable } from "@radix-ui/react-slot"
 
-import { VariantProps, cva } from "class-variance-authority"
-import { IconNode } from "lucide-react"
+import { type VariantProps, cva } from "class-variance-authority"
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-sm transition-colors disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
@@ -77,8 +76,6 @@ const Button = React.forwardRef<
     },
     ref
   ) => {
-    console.log(Icon)
-
     const Comp = asChild ? Slot : "button"
     return (
       <Comp

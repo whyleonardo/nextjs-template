@@ -1,8 +1,8 @@
-import { PropsWithChildren, RefObject } from "react"
+import type { PropsWithChildren, RefObject } from "react"
 
 import { cn } from "@/lib/utils"
 
-import { VariantProps, cva } from "class-variance-authority"
+import { type VariantProps, cva } from "class-variance-authority"
 
 interface TypographyProps<T> extends PropsWithChildren {
   className?: string

@@ -1,4 +1,4 @@
-import { type IconNode as LucideIcon, LucideProps } from "lucide-react"
+import type { IconNode as LucideIcon, LucideProps } from "lucide-react"
 
 export type Icon = LucideIcon
 
@@ -6,6 +6,7 @@ export const Icons = {
   tailwind: (props: LucideProps) => (
     <svg
       role="img"
+      aria-label="Tailwind CSS Icon"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
