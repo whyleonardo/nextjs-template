@@ -5,7 +5,7 @@
   },
   "linter": {
     "rules": {
-      "recommended": false,
+      "recommended": true,
       "complexity": {
         "noBannedTypes": "error",
         "noExtraBooleanCast": "error",
@@ -15,6 +15,7 @@
         "noWith": "error"
       },
       "correctness": {
+        "noUnusedImports": "error",
         "noConstAssign": "error",
         "noConstantCondition": "error",
         "noEmptyCharacterClassInRegex": "error",
@@ -65,6 +66,7 @@
         "noMisleadingCharacterClass": "error",
         "noMisleadingInstantiator": "error",
         "noPrototypeBuiltins": "error",
+        "noConsoleLog": "error",
         "noRedeclare": "error",
         "noShadowRestrictedNames": "error",
         "noUnsafeDeclarationMerging": "error",
