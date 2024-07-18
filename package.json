@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@biomejs/biome": "1.7.3",
-    "@radix-ui/react-slot": "1.0.2",
+    "@radix-ui/react-slot": "1.1.0",
     "@t3-oss/env-nextjs": "0.10.0",
     "babel-plugin-react-compiler": "0.0.0-experimental-487cb0e-20240529",
     "class-variance-authority": "0.7.0",
