@@ -3,5 +3,6 @@ bun.lockb
 .gitignore
 .husky
 .next
+.npmrc
 test-results
 test-coverage-results
