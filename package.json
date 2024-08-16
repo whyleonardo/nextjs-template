@@ -40,7 +40,7 @@
     "next-themes": "0.3.0",
     "react": "19.0.0-rc-935180c7e0-20240524",
     "react-dom": "19.0.0-rc-935180c7e0-20240524",
-    "sharp": "0.33.3",
+    "sharp": "0.33.5",
     "tailwind-merge": "2.2.2",
     "tailwindcss-animate": "1.0.7",
     "zod": "3.22.4"
