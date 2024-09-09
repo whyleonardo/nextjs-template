@@ -5,10 +5,6 @@ const nextConfig = {
     fetches: {
       fullUrl: true
     }
-  },
-  experimental: {
-    reactCompiler: true,
-    ppr: "incremental"
   }
 }
 
