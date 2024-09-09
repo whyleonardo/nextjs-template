@@ -1,4 +1,4 @@
-import { env } from "@/lib/env.mjs"
+import { env } from "@/lib/env"
 
 export const siteConfig = {
   name: "Next Boilerplate",
