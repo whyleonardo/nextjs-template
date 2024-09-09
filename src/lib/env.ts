@@ -5,7 +5,7 @@ import { z } from "zod"
 export const env = createEnv({
   server: {},
   client: {
-    NEXT_PUBLIC_SITE_BASE_URL: z.string().url().min(1)
+    NEXT_PUBLIC_SITE_BASE_URL: z.string().url().optional()
   },
 
   runtimeEnv: {
