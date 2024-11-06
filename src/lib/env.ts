@@ -7,8 +7,7 @@ export const env = createEnv({
   client: {
     NEXT_PUBLIC_SITE_BASE_URL: z.string().url().optional()
   },
-
-  runtimeEnv: {
+  experimental__runtimeEnv: {
     NEXT_PUBLIC_SITE_BASE_URL: process.env.NEXT_PUBLIC_SITE_BASE_URL
   }
 })
