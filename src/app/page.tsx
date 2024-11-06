@@ -1,7 +1,7 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Typography } from "@/components/ui/typography"
 
-export default function IndexPage() {
+export const HomePage = () => {
   return (
     <div className="grid h-dvh place-items-center">
       <main className="flex flex-col items-center gap-2 text-xl">
@@ -9,8 +9,10 @@ export default function IndexPage() {
           <ThemeToggle />
         </div>
 
-        <Typography.H1>Hello World</Typography.H1>
+        <Typography variant="h1">Hello World</Typography>
       </main>
     </div>
   )
 }
+
+export default HomePage
