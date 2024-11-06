@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply bg-background font-sans tracking-tighter text-foreground;
+    @apply bg-background font-sans text-foreground;
   }
 
   a,
