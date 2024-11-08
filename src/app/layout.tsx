@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils"
 import { fontCalSans, fontMono, fontSans } from "@/styles/fonts"
 import "@/styles/global.css"
 
+import { QueryProvider } from "@/providers/query-provider"
 import { ThemeProvider } from "@/providers/theme-provider"
 
 export const viewport: Viewport = {
@@ -36,7 +37,7 @@ export const RootLayout = ({ children }: RootLayoutProps) => {
       <head />
       <body className={cn("min-h-screen", fontSans, fontMono, fontCalSans)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+          <QueryProvider>{children}</QueryProvider>
         </ThemeProvider>
         <ScreenSizeIndicator />
       </body>
