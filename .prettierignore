@@ -6,3 +6,4 @@ bun.lockb
 .npmrc
 test-results
 test-coverage-results
+*.sql
