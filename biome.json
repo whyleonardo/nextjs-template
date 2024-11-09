@@ -10,7 +10,8 @@
         "noSvgWithoutTitle": "off"
       },
       "correctness": {
-        "noUnusedVariables": "error"
+        "noUnusedVariables": "error",
+        "noUnusedImports": "error"
       }
     },
     "ignore": [

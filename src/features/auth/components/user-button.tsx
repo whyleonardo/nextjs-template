@@ -4,7 +4,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
@@ -12,14 +11,6 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 import { useCurrentUser } from "@/features/auth/controllers/use-current-user"
-
-import {
-  BadgeCheck,
-  Bell,
-  CreditCard,
-  LogOutIcon,
-  Sparkles
-} from "lucide-react"
 
 import { LogoutButton } from "./logout-button"
 

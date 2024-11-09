@@ -1,7 +1,6 @@
 import { auth } from "@/lib/auth"
 
 import { createMiddleware } from "hono/factory"
-import { C } from "node_modules/better-auth/dist/auth-CMuefPy-"
 
 interface AdditionalSessionMiddlewareContext {
   Variables: {
