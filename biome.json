@@ -8,6 +8,9 @@
       "recommended": true,
       "a11y": {
         "noSvgWithoutTitle": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "error"
       }
     },
     "ignore": [

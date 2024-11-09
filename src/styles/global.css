@@ -6,7 +6,7 @@
   *,
   ::before,
   ::after {
-    @apply border-border;
+    @apply border-border/60 dark:border-border/30;
   }
 
   html {
@@ -96,7 +96,7 @@
 
     --ring: 0 0% 12.55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
 
   .dark {
