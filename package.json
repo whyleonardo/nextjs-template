@@ -51,7 +51,7 @@
     "react-dom": "^19.0.0-rc-33c7bd9a-20241104",
     "sharp": "0.33.5",
     "tailwind-merge": "^2.5.4",
-    "tailwind-variants": "^0.2.1",
+    "tailwind-variants": "^0.3.0",
     "tailwindcss": "^4.0.0-beta.2",
     "tailwindcss-animate": "^1.0.7",
     "zod": "3.23.8"
