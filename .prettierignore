@@ -7,3 +7,4 @@ bun.lockb
 test-results
 test-coverage-results
 *.sql
+*.toml

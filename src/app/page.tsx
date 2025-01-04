@@ -1,7 +1,7 @@
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Typography } from "@/components/ui/typography"
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <div className="grid h-dvh place-items-center">
       <main className="flex flex-col items-center gap-2 text-xl">
