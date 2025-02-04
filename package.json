@@ -74,7 +74,7 @@
     "prettier-plugin-tailwindcss": "0.6.9",
     "typescript": "5.7.2",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "2.1.8",
+    "vitest": "2.1.9",
     "vitest-fail-on-console": "0.7.1"
   },
   "trustedDependencies": [
