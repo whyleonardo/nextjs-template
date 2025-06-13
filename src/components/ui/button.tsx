@@ -2,8 +2,7 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
-import { Slot, Slottable } from "@radix-ui/react-slot"
-
+import { Slot as SlotPrimitive } from "radix-ui"
 import { type VariantProps, tv } from "tailwind-variants"
 
 const buttonVariants = tv({
@@ -73,7 +72,11 @@ const Button = React.forwardRef<
     },
     ref
   ) => {
-    const Comp = asChild ? Slot : "button"
+    const Comp = asChild ? SlotPrimitive.Slot : "button"
+
+    const Slottable = SlotPrimitive.Slot
+
+    SlotPrimitive
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
