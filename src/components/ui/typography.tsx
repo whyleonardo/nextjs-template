@@ -2,9 +2,9 @@ import type { FC, JSX, PropsWithChildren } from "react"
 
 import { cn } from "@/lib/utils"
 
-import { type VariantProps, tv } from "tailwind-variants"
+import { type VariantProps, cva } from "class-variance-authority"
 
-const typographyStyles = tv({
+const typographyStyles = cva("", {
   variants: {
     variant: {
       h1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
