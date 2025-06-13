@@ -46,7 +46,7 @@
     "tailwind-variants": "1.0.0",
     "tailwindcss": "4.1.8",
     "tailwindcss-animate": "1.0.7",
-    "zod": "3.25.32"
+    "zod": "3.25.64"
   },
   "devDependencies": {
     "@commitlint/cli": "19.8.1",
