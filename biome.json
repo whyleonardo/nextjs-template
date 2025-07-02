@@ -3,18 +3,8 @@
   "formatter": {
     "enabled": false
   },
-  "linter": {
-    "rules": {
-      "recommended": true,
-      "a11y": {
-        "noSvgWithoutTitle": "off"
-      },
-      "correctness": {
-        "noUnusedVariables": "error",
-        "noUnusedImports": "error"
-      }
-    },
-    "ignore": [
+  "files": {
+    "experimentalScannerIgnores": [
       "**/*.json",
       "dist/**",
       ".cache",
@@ -25,5 +15,17 @@
       "*.esm.js",
       ".next"
     ]
+  },
+  "linter": {
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noUnusedImports": "error"
+      }
+    }
   }
 }
